@@ -1,4 +1,4 @@
-.footer{
+.work-together{
     background-color: #1C1D20;
 }
 .title-container{
@@ -19,4 +19,55 @@ font-weight: 500;
 line-height: 40px;
 letter-spacing: -3%;
 color: #FAFAFA;
+}
+.form-work-together{
+
+}
+.input-email{
+color: rgba(250, 250, 250, 0.6);
+font-family: "Inter Tight",sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: -2%;
+}
+.textarea-comment{
+color: rgba(250, 250, 250, 0.6);
+font-family: "Inter Tight",sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: -2%;
+}
+.button-form{
+cursor: pointer;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+background-color: #ED3B44;
+color: rgb(250, 250, 250);
+font-family: "Inter Tight",sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: -2%;
+}
+.contacts-list{
+    display: flex;
+    gap: 4px;
+}
+.contacts-item{
+    border: 1px solid rgba(250, 250, 250, 0.2);
+border-radius: 60px;
+}
+.contacts{
+    display: block;
+    padding: 10px 12px;
+    color: rgb(250, 250, 250);
+    font-family: Inter Tight;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: -2%;
+    color: #FAFAFA;
 }
