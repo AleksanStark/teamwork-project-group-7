@@ -42,3 +42,13 @@ table {
 	border-spacing: 0;
 }
 
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+
+  button {
+    cursor: pointer;
+    border: none;
+  }
