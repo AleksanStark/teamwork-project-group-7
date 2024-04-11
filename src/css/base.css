@@ -6,7 +6,9 @@ body {
     background-color: black;
     color: #fafafa;
 }
-
+a{
+  text-decoration: none;
+}
 img {
     display: block;
     height: auto;
