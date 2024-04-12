@@ -1,13 +1,27 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
-const slider = function (_class) {
+
+export const slider = function (_class, slidePerView = 1) {
   const swiper = new Swiper(_class, {
-    slidesPerView: 2,
-    spaceBetween: 30,
-    // Enable navigation buttons
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+    slidesPerView: slidePerView,
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1440: {
+        slidesPerView: 4,
+      },
     },
+    spaceBetween: 30,
+    cssMode: true,
+    navigation: {
+      nextEl: '.swiper-button-right',
+      prevEl: '.swiper-button-left',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    mousewheel: true,
+    keyboard: true,
   });
 };
