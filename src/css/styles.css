@@ -8,13 +8,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('./normalize.css');
 @import url('./reset.css');
-@import url('base.css');
-/* @import url('./header.css');
+@import url("base.css");
+@import url('./header.css');
 @import url('./hero.css');
 @import url('./about.css');
 @import url('./benefits.css');
 @import url('./projects.css');
 @import url('./FAQ.css');
-@import url('./covers.css'); */
+@import url('./covers.css');
 @import url('./reviews.css');
-/* @import url('./work-together.css'); */
+@import url('./work-together.css');
