@@ -1,0 +1,61 @@
+body {
+  font-size: 16px;
+  font-family: 'Inter Tight';
+  font-weight: 500;
+  line-height: 1.5;
+  background-color: black;
+  color: #fafafa;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  background-color: #1c1d20;
+}
+
+@media screen and (max-width: 374.98px) {
+  .container {
+    max-width: 374.98px;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
