@@ -12,7 +12,7 @@ export const slider = function (_class, slidePerView = 1) {
         slidesPerView: 4,
       },
     },
-    spaceBetween: 30,
+    spaceBetween: 16,
     cssMode: true,
     navigation: {
       nextEl: '.swiper-button-right',
