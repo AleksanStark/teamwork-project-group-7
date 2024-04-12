@@ -3,7 +3,7 @@
 .faq-wrapper {
     max-width: 375px;
     margin: 0 auto;
-    padding-bottom: 64px;
+    padding: 64px 0;
 }
 
 .faq-container {
@@ -93,7 +93,7 @@
     .faq-wrapper {
         max-width: 768px;
         margin: 0 auto;
-        padding-bottom: 96px;
+        padding: 96px 0;
     }
 
     .faq-container {
