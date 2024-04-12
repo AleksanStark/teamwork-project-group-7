@@ -19,7 +19,7 @@ function handlerEmail(evt) {
 form.elements.comments.addEventListener('input', handlerComments);
 function handlerComments(evt) {
   const value = evt.currentTarget.value.trim();
-  data.comments = value;
+  data.comment = value;
 }
 //====================================================
 
@@ -35,7 +35,7 @@ function handlerSubmit(evt) {
       message: 'Fill in the email field, please',
     });
     return;
-  } else if (!data.comments) {
+  } else if (!data.comment) {
     iziToast.show({
       position: 'topRight',
       color: 'red',
