@@ -59,6 +59,7 @@
   left: 50%;
   transform: rotate(-180deg) translateX(70px);
 }
+
 .swiper-button-right {
   position: absolute;
   /* border: 1px solid rgba(250, 250, 250, 0.2); */
