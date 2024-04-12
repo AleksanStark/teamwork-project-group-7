@@ -1,0 +1,86 @@
+/* mobile styles */
+.review-wrapper {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  background-color: #1c1d20;
+}
+
+.review-section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.card {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 20px;
+  padding: 32px 24px;
+  width: 344px;
+  /* height: 302px; */
+}
+.mySwiper {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+  padding-bottom: 64px;
+}
+
+.review-title {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.4);
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.card-image {
+  margin-bottom: 32px;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+}
+
+.card-author {
+  margin-bottom: 8px;
+}
+
+.swiper-button-left {
+  position: absolute;
+  /* border: 1px solid rgba(250, 250, 250, 0.2); */
+  border-radius: 60px;
+  padding: 14px;
+  width: 52px;
+  height: 52px;
+  left: 50%;
+  transform: rotate(-180deg) translateX(70px);
+}
+.swiper-button-right {
+  position: absolute;
+  /* border: 1px solid rgba(250, 250, 250, 0.2); */
+  border-radius: 60px;
+  padding: 14px;
+  width: 52px;
+  height: 52px;
+  left: 50%;
+  /* transform: rotate(-180deg); */
+  transform: translateX(-1px);
+}
+
+/* tablet styles */
+/* @media (min-width: 768px) {
+  .review-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+} */
+
+/* desctop styles */
+/* @media (min-width: 1280px) {
+}  */
