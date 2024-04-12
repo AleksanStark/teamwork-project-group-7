@@ -1,14 +1,14 @@
 import Accordion from 'accordion-js'; import
 'accordion-js/dist/accordion.min.css';
 
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
-import { Navigation, Pagination } from 'swiper/modules';
+import Swiper from 'swiper';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 window.onload = () => {
     document.querySelector('.about-me-container').classList.remove('is-hidden');
     document.querySelector('.about-me-icon').classList.add('is-open');
-    document.querySelector('.skills-list').firstElementChild.classList.add('is-active');
 }
 // ---------------- accordion ----------
 
@@ -58,14 +58,27 @@ function onClickThird() {
 
 // ------------------ swiper ---------------
 
-
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper('.swiper', {
     modules: [Navigation],
     direction: 'horizontal',
     slidesPerView: 2,
     loop: true,
     navigation: {
-        nextEl: '.swiper-button-next'
+    nextEl: '.swiper-button-next'
     },
+    breakpoints: {
+        768: {
+            slidesPerView: 3,
+            
+        },
+        1440: {
+            slidesPerView: 6,
+            
+        }
+    },
+    keyboard: {
+    enabled: true,
+        onlyInViewport: false,
+    }
 });
 

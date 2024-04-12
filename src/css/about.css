@@ -106,16 +106,15 @@ display: flex;
 justify-content: space-between;
 }
 
-.skills-btn-container {
+/* .skills-btn-container {
 display: flex;
 justify-content: space-between;
 align-items: baseline;
-}
+} */
 
 .about-wrapper::after {
         content: '';
         position: absolute;
-        
         height: 2px;
         width: 343px;
         border-radius: 18px;
@@ -144,12 +143,11 @@ align-items: baseline;
 }
 
 
-.skills-list {
+.swiper-wrapper {
     padding-top: 32px;
-    display: flex;
 }
 
-.skills-list-item {
+.swiper-slide {
         text-align: center;
         width: 130px;
         padding-top: 53px;
@@ -166,7 +164,7 @@ align-items: baseline;
         border: 1px solid rgba(250, 250, 250, 0.2);
 }
 
-.is-active {
+.swiper-slide-active {
     background-color: #ED3B44;
 }
 
@@ -183,3 +181,18 @@ align-items: baseline;
     transition: all 1s ease;
 }
 
+@media screen and (min-width: 1280px) {
+    .about-me-text {
+        max-width: 612px;
+        margin-left: 696px;
+    }
+
+    .roles-list {
+        margin-left: 696px;
+    }
+
+    .education-list {
+        margin-left: 696px;
+    }
+
+}
