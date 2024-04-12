@@ -1,5 +1,7 @@
 import { fetchReviews } from './api.js';
 import { slider } from './slider.js';
+import Izitoast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
 const mySwiper = document.querySelector('.mySwiper');
 const reviewGallery = async () => {
@@ -30,7 +32,12 @@ const reviewGallery = async () => {
 
     container.insertAdjacentHTML('beforeend', markup);
   } catch (error) {
-    console.log(error);
+    Izitoast.error({
+      title: 'Error',
+      message: 'Not found',
+      position: 'topRight',
+    });
+    return;
   }
 };
 
