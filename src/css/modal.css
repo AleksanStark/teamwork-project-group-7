@@ -7,6 +7,13 @@
     z-index: 1;
     transition: opacity 250ms linear, visibility 250ms linear;
 }
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;}
+
+    .backdrop .is-hidden .modal {
+        transform: translate(-50%, -50%);}
 
 .modal{
 max-width: 280px;
@@ -16,8 +23,8 @@ left: 50%;
 border: 1px solid rgba(250, 250, 250, 0.1);
 background-color: #1C1D20;
 border-radius: 20px;
-position: relative;
-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%) scale(1);
+transition: transform 250ms linear, border-radius 250ms linear, border 250ms linear;
 padding: 64px 32px;
 @media screen and (min-width:790px) {
     max-width: 343px;
