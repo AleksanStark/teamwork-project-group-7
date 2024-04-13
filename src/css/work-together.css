@@ -1,19 +1,18 @@
 .work-together{
     padding-top: 32px;
     padding-bottom: 32px;
-    background-color: #1C1D20;
-    height: 522px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     @media screen and (min-width: 768px) {
         padding-top: 80px;
     padding-bottom: 169px;
-    height: 636px;
     }
+}
+.footer-wrap{
+    display: flex;
+    flex-direction: column;
     @media screen and (min-width: 1440px) {
         align-content: space-around;
         flex-wrap: wrap;
+        
     }
 }
 .succes{
@@ -24,7 +23,7 @@
 font-size: 14px;
 font-weight: 500;
 line-height: 18px;
-letter-spacing: -2%;
+letter-spacing: -0.02em;
 display: none;
 @media screen and (min-width: 768px){
     top: 100px;
@@ -38,7 +37,7 @@ display: none;
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
-    letter-spacing: -2%;
+    letter-spacing: -0.02em;
     display: none;
     @media screen and (min-width: 768px){
         top: 100px;
@@ -46,6 +45,7 @@ display: none;
 }
 
 .footer-image{
+    border-radius: 24px;
     @media screen and (min-width: 768px) {
         width: 70px;
         height: 70px;
@@ -55,6 +55,7 @@ display: none;
 .title-container{
     display: flex;
     flex-direction: column;
+    margin-bottom: 64px;
 }
 .title-block{
     display: flex;
@@ -66,7 +67,7 @@ font-family: "Inter Tight",sans-serif;
 font-size: 40px;
 font-weight: 500;
 line-height: 40px;
-letter-spacing: -3%;
+letter-spacing: -0.03em;
 text-transform: uppercase;
 @media screen and (min-width: 768px) {
     font-size: 64px;
@@ -80,7 +81,7 @@ font-family: "Inter Tight",sans-serif;
 font-size: 40px;
 font-weight: 500;
 line-height: 40px;
-letter-spacing: -3%;
+letter-spacing: -0.03em;
 color: #FAFAFA;
 text-transform: uppercase;
 @media screen and (min-width: 768px) {
@@ -94,7 +95,9 @@ text-transform: uppercase;
 display: flex;
 flex-direction: column;
 gap: 32px;
+margin-bottom: 64px;
 @media screen and (min-width: 768px){
+    margin-bottom: 18px;
     flex-direction: row;
     gap: 32px;
     align-items: center;
@@ -114,13 +117,13 @@ gap: 32px;
     }
 }
 .input-email{
-    
+padding-bottom: 20px;
 color: #FAFAFA;
 font-family: "Inter Tight",sans-serif;
 font-size: 16px;
 font-weight: 500;
 line-height: 24px;
-letter-spacing: -2%;
+letter-spacing: -0.02em;
 background-color: transparent;
 border: transparent;
 border-bottom: 1px solid #FAFAFA33;
@@ -159,13 +162,13 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-comment{
-    
+    padding-bottom: 20px;
 color: #FAFAFA;
 font-family: "Inter Tight",sans-serif;
 font-size: 16px;
 font-weight: 500;
 line-height: 24px;
-letter-spacing: -2%;
+letter-spacing: -0.02em;
 background-color: transparent;
 border: transparent;
 border-bottom: 1px solid #FAFAFA33;
@@ -199,8 +202,8 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .button-form{
 cursor: pointer;
-width: 150px;
-height: 150px;
+width: 100px;
+height: 100px;
 border-radius: 50%;
 background-color: #ED3B44;
 color: rgb(250, 250, 250);
@@ -208,7 +211,11 @@ font-family: "Inter Tight",sans-serif;
 font-size: 16px;
 font-weight: 500;
 line-height: 19px;
-letter-spacing: -2%;
+letter-spacing: -0.02em;
+@media screen and (min-width: 768px){
+    width: 150px;
+height: 150px;
+}
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 &:hover, 
 &:focus{
@@ -238,7 +245,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 14px;
     font-weight: 500;
     line-height: 17px;
-    letter-spacing: -2%;
+    letter-spacing: -0.02em;
     @media screen and (min-width: 768px) {
         font-size: 16px;
         font-weight: 500;

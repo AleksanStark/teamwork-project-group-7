@@ -5,24 +5,28 @@ import 'izitoast/dist/css/iziToast.min.css';
 //====================================================
 
 const form = document.querySelector('.form-work-together');
-//====================================================
+const textBoxModal = document.querySelector('.modal-text-box');
+const modal = document.querySelector('[data-modal]');
+const btnClose = document.querySelector('[data-modal-close]');
 
+//==================================================================
 let data = {};
 //====================================================
 
 form.elements.email.addEventListener('input', handlerEmail);
+
 function handlerEmail(evt) {
   const value = evt.currentTarget.value.trim();
   data.email = value;
 }
 //====================================================
 form.elements.comments.addEventListener('input', handlerComments);
+
 function handlerComments(evt) {
   const value = evt.currentTarget.value.trim();
   data.comment = value;
 }
 //====================================================
-
 form.addEventListener('submit', handlerSubmit);
 
 function handlerSubmit(evt) {
@@ -44,6 +48,30 @@ function handlerSubmit(evt) {
     });
     return;
   }
-  CreatePost(data);
+  CreatePost(data).then(obj => {
+    modal.classList.remove('visually-hidden');
+    const markup = modalTemplate(obj);
+    textBoxModal.innerHTML = markup;
+  });
+
   form.reset();
+}
+//==================================================================
+
+function modalTemplate({ message, title }) {
+  return `
+        <h3 class="modal-title">
+          ${title}
+        </h3>
+        <p class="modal-text">
+          ${message}
+        </p>
+    `;
+}
+//==================================================================
+btnClose.addEventListener('click', closeModal);
+
+function closeModal() {
+  modal.classList.add('visually-hidden');
+  textBoxModal.innerHTML = '';
 }
