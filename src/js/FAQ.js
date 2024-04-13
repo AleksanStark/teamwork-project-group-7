@@ -1,5 +1,8 @@
 'use strict';
 
+// import Accordion from 'accordion-js';
+// import 'accordion-js/dist/accordion.min.css';
+
 document.addEventListener('DOMContentLoaded', function () {
   const accordionItems = document.querySelectorAll('.faq');
 
