@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const header = item.querySelector('.faq-question-container');
     const content = item.querySelector('.faq-answer-container');
     const arrowIcon = header.querySelector(
-      '.faq-btn-accordion .faq-arrow-icon'
+      '.faq-btn-accordion>.faq-btn-accordion>.faq-arrow-icon'
     );
 
     header.addEventListener('click', function () {

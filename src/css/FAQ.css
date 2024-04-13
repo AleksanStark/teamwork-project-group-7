@@ -78,12 +78,16 @@
     padding-bottom: 20px;
 }
 
+.faq-desktop-cantainer.is-active {
+    max-height: 300px;
+}
+
 
 .faq-btn-accordion .faq-arrow-icon {
     transition: transform 0.3s ease-out;
 }
 
-.faq-btn-accordion.active .faq-arrow-icon {
+.faq-btn-accordion.is-active .faq-arrow-icon {
     transform: rotate(180deg);
 }
 
@@ -187,14 +191,3 @@
         padding-bottom: 24px;
     }
 }
-
-
-
-
-
-
-
-/* .faq-item {
-
-    width: calc((100% - 106px) / 2);
-} */
