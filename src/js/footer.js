@@ -18,6 +18,7 @@ form.elements.email.addEventListener('input', handlerEmail);
 function handlerEmail(evt) {
   const value = evt.currentTarget.value.trim();
   data.email = value;
+  console.log(value);
 }
 //====================================================
 form.elements.comments.addEventListener('input', handlerComments);

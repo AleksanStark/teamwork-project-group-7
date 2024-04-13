@@ -16,7 +16,7 @@
         transform: translate(-50%, -50%);}
 
 .modal{
-max-width: 280px;
+width: 343px;
 position: absolute;
 top: 50%;
 left: 50%;
@@ -27,7 +27,7 @@ transform: translate(-50%, -50%) scale(1);
 transition: transform 250ms linear, border-radius 250ms linear, border 250ms linear;
 padding: 64px 32px;
 @media screen and (min-width:790px) {
-    max-width: 343px;
+   width: 492px;
     padding: 64px 64px; 
 }
 }
