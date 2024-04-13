@@ -38,7 +38,7 @@ function checkSwiperleftButtonState(swiperInstance) {
   if (swiperInstance.activeIndex === 0) {
     swiperArrowLeft.setAttribute('src', 'img/arrow-left-disabled.svg');
   } else {
-    swiperArrowLeft.setAttribute('src', 'img/arrow-left.svg');
+    swiperArrowLeft.setAttribute('src', 'img/arrow-left.png');
   }
 }
 
