@@ -1,34 +1,63 @@
-<section class="work-together">
-  <div class="title-container">
-    <!-- <img src="" alt="" width="50" height="50" /> -->
-    <h2 class="title-footer">
-      Let’s <span class="span-text">work</span> together
-    </h2>
+<footer class="work-together" id="work-together">
+  <div class="container footer-wrap">
+    <div class="title-container">
+      <div class="title-block">
+        <img
+          src="img/image.jpeg"
+          class="footer-image"
+          alt=""
+          alt="blond-guy"
+          width="44"
+          height="44"
+        />
+        <h2 class="title-work-together">
+          Let’s
+          <span class="span-text">work</span>
+        </h2>
+      </div>
+      <h3 class="title-work-together">together</h3>
+    </div>
+    <form class="form-work-together">
+      <div class="box-input">
+        <input
+          class="input-email"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="clients@gmail.com"
+        />
+        <p class="succes">Succes!</p>
+        <p class="invalid">Invalid email, try again</p>
+        <input
+          type="text"
+          name="comments"
+          id="comments"
+          class="input-comment"
+          placeholder="comments"
+          minlength="10"
+        />
+      </div>
+      <button type="submit" class="button-form">Send</button>
+    </form>
+    <ul class="contacts-list">
+      <li class="contacts-item">
+        <a class="contacts" href="mailto:lloydjefferson@gmail.com"
+          >lloydjefferson@gmail.com</a
+        >
+      </li>
+      <li class="contacts-item">
+        <a class="contacts" href="tel:+380 11 1111 11 11">+380 11 1111 11 11</a>
+      </li>
+    </ul>
   </div>
-  <form class="form-work-together">
-    <input
-      class="input-email"
-      type="email"
-      name="email"
-      id="email-input"
-      placeholder="clients@gmail.com"
-    />
-    <textarea
-      name="comments"
-      id="comments"
-      class="textarea-comment"
-      placeholder="comments"
-    ></textarea>
-    <button class="button-form">Send</button>
-  </form>
-  <ul class="contacts-list">
-    <li class="contacts-item">
-      <a class="contacts" href="mailto:lloydjefferson@gmail.com"
-        >lloydjefferson@gmail.com</a
-      >
-    </li>
-    <li class="contacts-item">
-      <a class="contacts" href="tel:+380 11 1111 11 11">+380 11 1111 11 11</a>
-    </li>
-  </ul>
-</section>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="modal-button" type="button" data-modal-close>
+        <svg class="close-icon" width="20" height="20">
+          <use href="img/icons-svg.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="modal-text-box"></div>
+    </div>
+  </div>
+</footer>
