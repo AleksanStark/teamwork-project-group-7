@@ -8,12 +8,55 @@
   <script type="module" crossorigin src="/teamwork-project-group-7/commonHelpers.js"></script>
   <link rel="modulepreload" crossorigin href="/teamwork-project-group-7/assets/vendor-87fbb236.js">
   <link rel="stylesheet" href="/teamwork-project-group-7/assets/vendor-827d51bf.css">
-  <link rel="stylesheet" href="/teamwork-project-group-7/assets/index-232dd7df.css">
+  <link rel="stylesheet" href="/teamwork-project-group-7/assets/index-26fd83b1.css">
 </head>
 <body>
-  <header class="header">
-
+  <header class=" header-wrapper transparent">
+  <a class="logo" href="index.html">
+    <img src="/teamwork-project-group-7/assets/logo-image-fa002b63.jpeg" alt="logo image" class="logo-image"> 
+    <p class="logo-text">jefferson*</p>
+  </a> 
+  <div class="menu-button-open">
+    <button class="mobile-menu-btn" aria-expanded="false" type="button">
+      <svg 
+        class="mobile-menu-btn-icon" 
+        width="28"
+        height="28" aria-label="mobile-menu-icon-open">
+        <use href="/teamwork-project-group-7/assets/icons-a49e6830.svg#icon-open"></use>
+      </svg>
+    </button>
+  </div>
+  <nav class="page-nav">
+    <a class="page-nav-button">Menu</a>
+  </nav>
+    <!-- <ul class="menu">
+      <li class="menu-nav">
+        <button class="button">
+          <a href="#about">About me</a>
+        </button>
+      </li>
+      <li class="menu-nav">
+        <button class="button">
+          <a href="#benefits">Benefits</a>
+        </button>
+      </li>
+      <li class="menu-nav">
+        <button class="button">
+          <a href="#projects">Projects</a>
+        </button>
+      </li>
+      <li class="menu-nav">
+        <button class="button">
+          <a href="#faq">FAQ</a>
+        </button>
+      </li>
+    </ul> -->
+  <button class="button-menu-page">
+    <a id="button-cont" href="#worktogether">Order the project</a>
+  </button>
 </header>
+
+
 
   <main>
     <section class="hero">
@@ -375,6 +418,33 @@
   </div>
 </footer>
   
+    <div class="menu-wrapper" id="mobile-menu">
+    <button class="menu-button-close" type="button">
+      <svg class="menu-button-icon" width="16" height="16" viewBox="0 0 16 16">
+        <use href="/teamwork-project-group-7/assets/icons-a49e6830.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="menu-nav-cont">
+      <ul class="menu-nav-list">
+        <li class="menu-nav-list-item">
+          <a id="menu-about" href="#about">About me</a>
+        </li>
+        <li class="menu-nav-list-item">
+          <a id="menu-benefits" href="#benefits">Benefits</a>
+        </li>
+        <li class="menu-nav-list-item">
+          <a id="menu-projects" href="#projects">Projects</a>
+        </li>
+        <li class="menu-nav-list-item">
+          <a id="menu-faq" href="#faq">FAQ</a>
+        </li>
+      </ul>
+  </div>
+  <button class="button-menu-cont">
+    <a id="button-cont" href="#worktogether">Order the project</a>
+  </button>
+</div>  
+
   </main>
 
   
