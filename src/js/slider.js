@@ -1,7 +1,9 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
+
 const swiperArrowLeft = document.querySelector('.swiper-arrow-left');
 const swiperArrowRight = document.querySelector('.swiper-arrow-right');
+
 export const slider = function (_class, slidePerView = 1) {
   const swiper = new Swiper(_class, {
     slidesPerView: slidePerView,
@@ -23,22 +25,26 @@ export const slider = function (_class, slidePerView = 1) {
       el: '.swiper-pagination',
     },
     on: {
+      init: function () {
+        checkSwiperleftButtonState(this);
+        checkSwiperRightButtonState(this);
+      },
       slideChange: function () {
         checkSwiperleftButtonState(this);
         checkSwiperRightButtonState(this);
       },
     },
+
     mousewheel: true,
     keyboard: true,
   });
-  checkSwiperleftButtonState(swiper);
-  checkSwiperRightButtonState(swiper);
 };
+
 function checkSwiperleftButtonState(swiperInstance) {
   if (swiperInstance.activeIndex === 0) {
     swiperArrowLeft.setAttribute('src', 'img/arrow-left-disabled.svg');
   } else {
-    swiperArrowLeft.setAttribute('src', 'img/arrow-left.png');
+    swiperArrowLeft.setAttribute('src', 'img/arrow-left.svg');
   }
 }
 
