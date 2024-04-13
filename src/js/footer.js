@@ -49,7 +49,7 @@ function handlerSubmit(evt) {
     return;
   }
   CreatePost(data).then(obj => {
-    modal.classList.remove('visually-hidden');
+    modal.classList.remove('is-hidden');
     const markup = modalTemplate(obj);
     textBoxModal.innerHTML = markup;
   });
@@ -72,6 +72,6 @@ function modalTemplate({ message, title }) {
 btnClose.addEventListener('click', closeModal);
 
 function closeModal() {
-  modal.classList.add('visually-hidden');
+  modal.classList.add('is-hidden');
   textBoxModal.innerHTML = '';
 }
