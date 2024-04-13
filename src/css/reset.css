@@ -137,3 +137,9 @@ button {
 a {
   text-decoration: none;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
