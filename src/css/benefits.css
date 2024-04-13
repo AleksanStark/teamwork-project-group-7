@@ -1,6 +1,7 @@
 
 .benefits{
     background: #1C1D20;
+    padding: 64px 0;
 }
 
 .benefits-container{
@@ -83,6 +84,16 @@
 
 }
 
+.order-link{
+    color: #FAFAFA;
+    font-family: "Inter Tight";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.32px;
+    cursor: pointer;
+}
+
 .benefits-order-btn:hover{
     background: #ED3B44;
     border: none;
@@ -109,6 +120,10 @@
 }
 
 @media  screen and (min-width: 768px) {
+    .benefits{
+        padding: 96px 0;
+    }
+
     .container {
         max-width: 768px;
         padding: 0 32px;
@@ -136,6 +151,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+    .benefits{
+        padding: 164px 0;
+    }
+
     .container {
         max-width: 1440px;
     }
