@@ -42,5 +42,5 @@ const reviewGallery = async () => {
 
 window.addEventListener('DOMContentLoaded', () => {
   reviewGallery();
-  slider('.swiper-review');
+  slider('.mySwiper');
 });

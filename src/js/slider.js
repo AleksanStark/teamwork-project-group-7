@@ -17,8 +17,8 @@ export const slider = function (_class, slidePerView = 1) {
     spaceBetween: 16,
     cssMode: true,
     navigation: {
-      nextEl: '.review-swiper-button-right',
-      prevEl: '.review-swiper-button-left',
+      nextEl: '.swiper-button-right',
+      prevEl: '.swiper-button-left',
     },
     pagination: {
       el: '.swiper-pagination',
