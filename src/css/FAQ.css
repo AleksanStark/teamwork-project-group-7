@@ -167,7 +167,7 @@
         margin: 0 auto;
     }
 
-    .faq-desktop-cantainer {
+    .faq-desktop-container {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -191,14 +191,13 @@
 
     .faq-text {
         width: 656px;
-
     }
 
-    .list-items-left {
+    .faq-list-items-left {
         padding-right: 31.5px;
     }
 
-    .list-items-right {
+    .faq-list-items-right {
         padding-left: 31.5px;
         border-left: 1px solid rgba(250, 250, 250, 0.2);
         ;
