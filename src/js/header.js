@@ -1,10 +1,8 @@
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-
-
 const menuContainer = document.querySelector('.menu-wrapper');
-
-
 const pageNavButton = document.querySelector('.page-nav-button');
+
+
 
 
 pageNavButton.addEventListener('click', () => {
@@ -34,3 +32,6 @@ menuLinks.forEach(link => {
         menuContainer.classList.remove('is-open');
     });
 });
+
+
+
