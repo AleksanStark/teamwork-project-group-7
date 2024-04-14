@@ -18,7 +18,6 @@ form.elements.email.addEventListener('input', handlerEmail);
 function handlerEmail(evt) {
   const value = evt.currentTarget.value.trim();
   data.email = value;
-  console.log(value);
 }
 //====================================================
 form.elements.comments.addEventListener('input', handlerComments);
@@ -71,7 +70,15 @@ function modalTemplate({ message, title }) {
 }
 //==================================================================
 btnClose.addEventListener('click', closeModal);
+document.addEventListener('click', closeModal);
+document.addEventListener('keydown', closeByEsc);
 
+function closeByEsc(evt) {
+  if (evt.key === 'Escape') {
+    modal.classList.add('is-hidden');
+    textBoxModal.innerHTML = '';
+  }
+}
 function closeModal() {
   modal.classList.add('is-hidden');
   textBoxModal.innerHTML = '';
