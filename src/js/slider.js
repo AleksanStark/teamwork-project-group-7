@@ -17,8 +17,8 @@ export const slider = function (_class, slidePerView = 1) {
     spaceBetween: 16,
     cssMode: true,
     navigation: {
-      nextEl: '.swiper-button-right',
-      prevEl: '.swiper-button-left',
+      nextEl: '.review-swiper-button-right',
+      prevEl: '.review-swiper-button-left',
     },
     pagination: {
       el: '.swiper-pagination',
@@ -39,19 +39,20 @@ export const slider = function (_class, slidePerView = 1) {
   });
 };
 
+
 function checkSwiperleftButtonState(swiperInstance) {
   if (swiperInstance.activeIndex === 0) {
-    swiperArrowLeft.setAttribute('src', 'img/arrow-left-disabled.svg');
+    swiperArrowLeft.setAttribute('src', './img/arrow-left-disabled.svg');
   } else {
-    swiperArrowLeft.setAttribute('src', 'img/arrow-left.svg');
+    swiperArrowLeft.setAttribute('src', './img/arrow-left.svg');
   }
 }
 
 function checkSwiperRightButtonState(swiperInstance) {
   const slidesLength = swiperInstance.slides.length;
   if (swiperInstance.activeIndex === slidesLength - 1) {
-    swiperArrowRight.setAttribute('src', 'img/arrow-right-disabled.svg');
+    swiperArrowRight.setAttribute('src', './img/arrow-right-disabled.svg');
   } else {
-    swiperArrowRight.setAttribute('src', 'img/arrow-right.svg');
+    swiperArrowRight.setAttribute('src', './img/arrow-right.svg');
   }
 }
