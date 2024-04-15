@@ -1,10 +1,25 @@
 <section class="about">
   <div class="wrapper-about container">
-    <h2 class="visually-hidden"></h2>
+    <h2 class="visually-hidden">
+    </h2>
+    <div class="about-title-container">
+     <div class="about-title-text-container">
+      <p class="about-title-text">I work with people all over the world to create impressive and <span class="about-accent-red">functional</span> <span class="about-accent-gray">websites</span> that reflect each client's unique personality.</p>
+    </div>
+    
+    <picture class="about-picture">
+      <source srcset="../img/about/about-picture-desktop.jpg 1x, ../img/about/about-picture-desktop@2x.jpg 2x" media="(min-width: 1280px)" width="680" height="700">
+      <source srcset="../img/about/about-picture-tablet.jpg 1x,
+      ../img/about/about-picture-tablet@2x.jpg 2x" media="(min-width: 768px)" width="704" height="700">
+      <source srcset="../img/about/about-picture-mobile.jpg 1x,
+      ../img/about/about-picture-mobile@2x.jpg 2x" media="(max-width: 767px)" width="343" height="500">
+      <img class="about-img" src="../img/about/about-picture-mobile.jpg" alt="blond man with laptop" width="343" height="500">
+    </picture>
+    </div>
     <ul class="about-list accordion-container">
       <li class="about-list-item about-wrapper">
         <div class="title-btn-container">
-          <h3 class="about-subtitle">About me</h3>
+          <h4 class="about-subtitle">About me</h4>
           <button class="about-list-btn ac-trigger-first" type="button">
             <svg
               class="about-btn-icon icon about-me-icon"
@@ -43,7 +58,7 @@
       </li>
       <li class="about-list-item role-wrapper">
         <div class="title-btn-container">
-          <h3 class="about-subtitle">Role</h3>
+          <h4 class="about-subtitle">Role</h4>
           <button class="about-list-btn ac-trigger-second" type="button">
             <svg
               class="about-btn-icon icon role-icon"
@@ -65,7 +80,7 @@
       </li>
       <li class="about-list-item education-wrapper">
         <div class="title-btn-container">
-          <h3 class="about-subtitle">Education</h3>
+          <h4 class="about-subtitle">Education</h4>
           <button class="about-list-btn ac-trigger-third" type="button">
             <svg
               class="about-btn-icon icon education-icon"
@@ -105,7 +120,7 @@
                   <div class="swiper-slide">React Native</div>
                   <div class="swiper-slide">Soft skills</div>
               </div>
-              <div class="swiper-button-next">
+              <div class="skills-btn">
                   <svg
                     class="skills-btn-icon"
                     width="18"

@@ -13,15 +13,15 @@ window.onload = () => {
 // ---------------- accordion ----------
 
 document
-  .querySelector('.ac-trigger-first')
+  .querySelector('.about-wrapper')
   .addEventListener('click', onClickFirst);
 
 document
-  .querySelector('.ac-trigger-second')
+  .querySelector('.role-wrapper')
   .addEventListener('click', onClickSecond);
 
 document
-  .querySelector('.ac-trigger-third')
+  .querySelector('.education-wrapper')
   .addEventListener('click', onClickThird);
 
 function onClickFirst() {
@@ -74,7 +74,7 @@ const about_swiper = new Swiper('.swiper-about', {
   slidesPerView: 2,
   loop: true,
   navigation: {
-    nextEl: '.swiper-button-next',
+    nextEl: '.skills-btn',
   },
   breakpoints: {
     768: {
