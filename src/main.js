@@ -1,3 +1,4 @@
+import './js/header.js'
 import './js/api.js';
 import './js/review.js';
 import './js/footer.js';
