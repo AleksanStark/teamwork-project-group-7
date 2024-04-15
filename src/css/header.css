@@ -6,7 +6,6 @@
 
 body {
   font-family: 'Inter', sans-serif;
-
 }
 
 p,
@@ -64,7 +63,6 @@ button {
 }
 
 .header-wrapper {
-  max-width: 375px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -103,7 +101,7 @@ text-align: left;
 }
 
 .menu-button-open {
-    margin-left: 143px;
+  margin-left: 143px;
 }
 
 .mobile-menu-btn {
@@ -121,7 +119,7 @@ text-align: left;
 }
 
 .menu-wrapper {
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -164,6 +162,7 @@ text-align: left;
   width: 100%; 
 }
 
+
 .menu-nav-cont {
   padding-bottom: 289px;
   color: rgb(250, 250, 250);
@@ -182,13 +181,12 @@ text-align: left;
   align-items: center;
 }
 
-.menu-nav-list-item a:hover,
-.menu-nav-list-item a:active,
-.menu-nav-list-item a:focus {
-    color: #ED3B44;
-    text-decoration-color: #ED3B44;
+.menu-nav-list-item:hover a,
+.menu-nav-list-item:active a,
+.menu-nav-list-item:focus a {
+  color: #ED3B44;
+  text-decoration-color: #ED3B44;
 }
-
 
 .button-menu-cont {
   cursor: pointer;
@@ -205,11 +203,11 @@ text-align: left;
   margin-bottom: 64px;
 }
 
-.button-menu-cont a:hover,
-.button-menu-cont a:active,
-.button-menu-cont a:focus{
-  color: #ED3B44;
-  text-decoration-color: #ED3B44;}
+.button-menu-cont:hover a,
+.button-menu-cont:active a,
+.button-menu-cont:focus a {
+  background-color: #E0373F;
+}
 
 @media screen and (min-width: 768px) {
   .header-wrapper {
@@ -220,11 +218,11 @@ text-align: left;
   .menu-button-open {
     display: none;
   }
-
-  .menu-button-close {
-    display: none;
-  }
  
+  .menu-wrapper.is-open {
+    background-image: none;
+  }
+
   .page-nav {
     display:flex;}
 
@@ -246,6 +244,7 @@ text-align: left;
   }
 
   .menu-wrapper {
+    max-width: 768px;    
     padding: 32px;
   }
 
@@ -275,33 +274,26 @@ text-align: left;
   .button-menu-page:focus {
     background-color: #E0373F;
   }
-
-  .menu-nav-list-item {
-    margin-top: 20px; 
-  }
-
-  .menu-wrapper.is-open {
-    background-image: none;
-  }
-
-  .menu-nav-list{
-    flex-direction: row;
-  }
-
-  .menu-nav-list-item {
-    margin-right: 100px; 
-    margin-top: 65px; 
-  }
-
-  .menu-nav-list-item:last-child {
-    margin-right: 0;
-  }
 }
+
 
 @media screen and (min-width: 1440px) {
   .header-wrapper {
       max-width: 1440px;
   }
+  .menu-wrapper {
+    max-width: 1440px;
+  }
+  .menu-nav-list{
+    flex-direction: row;
+  }
+
+  .menu-nav-list-item {
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+  }
+
+  .menu-nav-list-item:last-child {
+    margin-right: 0;
+  }
 }  
-
-
