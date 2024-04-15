@@ -11,6 +11,7 @@
 @import url('base.css');
 @import url('./header.css');
 @import url('./hero.css');
+@import url('./about.css');
 @import url('./benefits.css');
 @import url('./projects.css');
 @import url('./FAQ.css');
@@ -19,4 +20,3 @@
 @import url('./work-together.css');
 @import url('./work-together.css');
 @import url('./modal.css');
-
