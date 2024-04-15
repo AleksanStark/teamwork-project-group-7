@@ -70,7 +70,15 @@ function modalTemplate({ message, title }) {
 }
 //==================================================================
 btnClose.addEventListener('click', closeModal);
+document.addEventListener('click', closeModal);
+document.addEventListener('keydown', closeByEsc);
 
+function closeByEsc(evt) {
+  if (evt.key === 'Escape') {
+    modal.classList.add('is-hidden');
+    textBoxModal.innerHTML = '';
+  }
+}
 function closeModal() {
   modal.classList.add('is-hidden');
   textBoxModal.innerHTML = '';
