@@ -221,7 +221,19 @@ text-align: left;
  
   .menu-wrapper.is-open {
     background-image: none;
+    top: 10px;
+    left: 5px;
+    position: absolute;
+
   }
+
+  .menu-nav-list-item {
+    margin-bottom: 10px; 
+  }
+
+.menu-nav-cont {
+  text-decoration-line: none;
+}
 
   .page-nav {
     display:flex;}
@@ -244,12 +256,11 @@ text-align: left;
   }
 
   .menu-wrapper {
-    max-width: 768px;    
     padding: 32px;
   }
 
   .menu-button-close {
-    padding-bottom: 0;
+    padding-bottom: 20px;
   }
 
 .button-menu-page {
@@ -279,21 +290,11 @@ text-align: left;
 
 @media screen and (min-width: 1440px) {
   .header-wrapper {
-      max-width: 1440px;
-  }
-  .menu-wrapper {
     max-width: 1440px;
   }
-  .menu-nav-list{
-    flex-direction: row;
-  }
+
 
   .menu-nav-list-item {
-    margin-right: 20px; 
     margin-bottom: 20px; 
-  }
-
-  .menu-nav-list-item:last-child {
-    margin-right: 0;
   }
 }  
