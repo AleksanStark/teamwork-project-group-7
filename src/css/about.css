@@ -164,7 +164,7 @@ align-items: baseline;
         border: 1px solid rgba(250, 250, 250, 0.2);
 }
 
-.swiper-slide-active {
+.swiper-about .swiper-slide-active {
     background-color: #ED3B44;
 }
 
