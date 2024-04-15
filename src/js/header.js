@@ -1,3 +1,4 @@
+
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const menuContainer = document.querySelector('.menu-wrapper');
 const pageNavButton = document.querySelector('.page-nav-button');
@@ -27,4 +28,8 @@ menuLinks.forEach(link => {
         mobileMenuBtn.setAttribute('aria-expanded', 'false');
         menuContainer.classList.remove('is-open');
     });
+
 });
+
+});
+
