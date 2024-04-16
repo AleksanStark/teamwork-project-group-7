@@ -133,14 +133,12 @@ text-align: left;
   transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-100%);
 }   
 
 .menu-wrapper.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transform: translateY(0);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   background-image: url("/img/menu_background.png");
   background-size: cover;
@@ -219,6 +217,10 @@ text-align: left;
     display: none;
   }
  
+  .menu-button-close {
+    display: none;
+  }
+
   .menu-wrapper.is-open {
     background-image: none;
     top: 10px;
