@@ -2,10 +2,14 @@
 .hero {
   margin-left: auto;
   margin-right: auto;
+
+  background-image: url(../img/hero/mobile-hero.png);
+
   background-image: /* linear-gradient(-90deg,
             rgba(28, 29, 32, 1),
             rgb(105, 41, 45, 1),
             rgba(237, 59, 68, 1)),*/ url('../img/hero/bg-red-x1.png');
+
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -15,10 +19,14 @@
   screen and (min-resolution: 2dppx),
   screen and (min-device-pixel-ratio: 2) {
   .hero {
+
+    background-image: url(../img/hero/mobile-hero@2x.png);
+
     background-image: /*linear-gradient(-90deg,
             rgba(28, 29, 32, 1),
             rgb(105, 41, 45, 1),
             rgba(237, 59, 68, 1)),*/ url('../img/hero/bg-red-x2.png');
+
   }
 }
 
@@ -143,20 +151,21 @@
 }
 
 @media screen and (min-width: 768px) {
+  .hero {
+          background-image: url(../img/hero/tablet-hero.png);
+          max-width: 768px;
+          }
+
   @media screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
     screen and (min-device-pixel-ratio: 2) {
-    /*.hero {
-        background-image: linear-gradient(-90deg,
-                rgba(28, 29, 32, 1),
-                rgb(105, 41, 45, 1),
-                rgba(237, 59, 68, 1)),
-                url(#);
-        }*/
+    .hero {
+        background-image: url(../img/hero/tablet-hero@2x.png);
+        }
   }
 
   .hero-title {
-    max-width: 632px;
+    max-width: 768px;
     font-size: 90px;
   }
 
@@ -187,22 +196,22 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
+  .hero {
+      background-image: url(../img/hero/desktop-hero.png);
+      max-width: 1440px;
+    }
+
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
     screen and (min-device-pixel-ratio: 2) {
-    /*.hero {
-    background-image: linear-gradient(-90deg,
-            rgba(28, 29, 32, 1),
-            rgb(105, 41, 45, 1),
-            rgba(237, 59, 68, 1)),
-            url(#);
+    .hero {
+    background-image: url(../img/hero/desktop-hero@2x.png);
         }
-    } */
-  }
+    } 
 
   .hero-title {
-    max-width: 1084px;
+    max-width: 1440px;
     font-size: 90px;
     padding-bottom: 243px;
     padding-top: 300px;
