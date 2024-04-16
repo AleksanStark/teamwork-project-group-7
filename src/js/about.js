@@ -68,7 +68,7 @@ function onClickThird() {
 
 // ------------------ swiper ---------------
 
-const swiper = new Swiper('.swiper', {
+const about_swiper = new Swiper('.swiper-about', {
   modules: [Navigation],
   direction: 'horizontal',
   slidesPerView: 2,
@@ -89,3 +89,4 @@ const swiper = new Swiper('.swiper', {
     onlyInViewport: false,
   },
 });
+about_swiper.controller =  about_swiper

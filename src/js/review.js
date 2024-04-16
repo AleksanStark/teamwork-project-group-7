@@ -12,7 +12,7 @@ const reviewGallery = async () => {
       review,
     }));
 
-    const container = document.querySelector('.swiper-wrapper');
+    const container = document.querySelector('.markup');
 
     const markup = reviewObject
       .map(({ _id, author, avatar_url, review }) => {
@@ -42,5 +42,5 @@ const reviewGallery = async () => {
 
 window.addEventListener('DOMContentLoaded', () => {
   reviewGallery();
-  slider('.swiper');
+  slider('.mySwiper');
 });

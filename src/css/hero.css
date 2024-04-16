@@ -2,7 +2,14 @@
 .hero {
   margin-left: auto;
   margin-right: auto;
+
   background-image: url(../img/hero/mobile-hero.png);
+
+  background-image: /* linear-gradient(-90deg,
+            rgba(28, 29, 32, 1),
+            rgb(105, 41, 45, 1),
+            rgba(237, 59, 68, 1)),*/ url('../img/hero/bg-red-x1.png');
+
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -12,7 +19,14 @@
   screen and (min-resolution: 2dppx),
   screen and (min-device-pixel-ratio: 2) {
   .hero {
+
     background-image: url(../img/hero/mobile-hero@2x.png);
+
+    background-image: /*linear-gradient(-90deg,
+            rgba(28, 29, 32, 1),
+            rgb(105, 41, 45, 1),
+            rgba(237, 59, 68, 1)),*/ url('../img/hero/bg-red-x2.png');
+
   }
 }
 
