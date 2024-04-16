@@ -264,21 +264,19 @@ width: 130px;
 }
 
 .skills-btn-container {
-    margin-right: 55px;
+    margin-right: 54px;
 }
 
-.about-list-item{
+.skills-btn-container {
     position: relative;
 }
 
 .skills-btn {
     position: absolute;
     top: 85px;
-    z-index: 9999999;
-    right: 0px;
+    right: 0;
+    z-index: 9999;
     display: block;
-    justify-content: center;
-    align-items: center;
     background-color: transparent;
     cursor: pointer;
     border: none;
