@@ -5,7 +5,7 @@
   padding: 0 15px;
   margin: 0 auto;
 }
-/* .swiper-slide {
+/* .swiper-slide{
   max-width: 315px;
 } */
 .review-section {
@@ -171,9 +171,9 @@
     padding: 32px 24px;
     width: 332px;
   }
-  .swiper-slide {
+  /* .swiper-slide {
     max-width: 332px;
-  }
+  } */
   .swiper-button-left {
     display: flex;
     justify-content: center;
