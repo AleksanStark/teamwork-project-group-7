@@ -20,7 +20,6 @@
   align-items: center;
   justify-content: space-around;
   gap: 32px;
-  min-width: 100%;
   z-index: 990;
   animation: scroll-x var(--duration) linear infinite;
 }
