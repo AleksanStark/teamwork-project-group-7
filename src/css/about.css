@@ -143,9 +143,9 @@ align-items: baseline;
 }
 
 
-.swiper-wrapper {
+/* .swiper-wrapper {
     padding-top: 32px;
-}
+} */
 
 .swiper-slide {
         text-align: center;
