@@ -222,7 +222,7 @@ text-align: left;
 
   .menu-wrapper.is-open {
     background-image: none;
-    top: 10px;
+    top: 65px;
     left: 5px;
     position: absolute;
   }
