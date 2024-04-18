@@ -60,7 +60,3 @@ menuLinks.forEach(link => {
   });
 });
 
-// link.addEventListener('click', () => {
-//   mobileMenuBtn.setAttribute('aria-expanded', 'false');
-//   menuContainer.classList.remove('is-open');
-// });
