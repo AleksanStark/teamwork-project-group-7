@@ -89,4 +89,4 @@ const about_swiper = new Swiper('.swiper-about', {
     onlyInViewport: false,
   },
 });
-about_swiper.controller =  about_swiper
+about_swiper.controller = about_swiper;

@@ -1,27 +1,15 @@
-.swiper-hero {
-  min-height: 100%;
-}
-
-.swiper-hero-slide img {
-  width: 100%;
-  min-height: 100vh;
-}
-
-.swiper-hero {
-  overflow: hidden;
-}
-
-.swiper-hero-slide {
-  width: 100%;
-}
 
 .hero {
   margin-left: auto;
   margin-right: auto;
+
+  background-image: url(../img/hero/mobile-hero.png);
+
   background-image: /* linear-gradient(-90deg,
             rgba(28, 29, 32, 1),
             rgb(105, 41, 45, 1),
             rgba(237, 59, 68, 1)),*/ url('../img/hero/bg-red-x1.png');
+
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -31,10 +19,14 @@
   screen and (min-resolution: 2dppx),
   screen and (min-device-pixel-ratio: 2) {
   .hero {
+
+    background-image: url(../img/hero/mobile-hero@2x.png);
+
     background-image: /*linear-gradient(-90deg,
             rgba(28, 29, 32, 1),
             rgb(105, 41, 45, 1),
             rgba(237, 59, 68, 1)),*/ url('../img/hero/bg-red-x2.png');
+
   }
 }
 
@@ -100,33 +92,80 @@
   border: 1px solid rgba(250, 250, 250, 0.2);
 }
 
-a:hover {
+
+.link-mail:hover,
+.link-mail:active {
+  background-color: #e0373f;
+  box-shadow: 0 0 15px 5px #f4e4e5;
   cursor: pointer;
 }
 
-.link-mail:hover {
-  border: 1px solid #fafafa;
+.link:hover,
+.link:active {
+  background-color: #e0373f;
+  box-shadow: 0 0 15px 5px #f4e4e5;
+  cursor: pointer;
 }
 
-.link:hover:hover {
-  border: 1px solid #fafafa;
+@keyframes socialMediaMarkup {
+
+  0%,
+  20% {
+    box-shadow: none;
+  }
+
+  25%,
+  45% {
+    box-shadow: 0 0 15px 5px #f4e4e5;
+  }
+
+  50%,
+  70% {
+    box-shadow: none;
+  }
+}
+
+.animation {
+  animation: socialMediaMarkup 9.5s infinite;
+  /* Adjust the total animation duration and repeat count */
+}
+
+.one {
+  animation-delay: 2.5s;
+}
+
+.two {
+  animation-delay: 4.5s;
+}
+
+.three {
+  animation-delay: 6.5s;
+}
+
+.four {
+  animation-delay: 8.5s;
+}
+
+.five {
+  animation-delay: 10.5s;
 }
 
 @media screen and (min-width: 768px) {
+  .hero {
+          background-image: url(../img/hero/tablet-hero.png);
+          max-width: 768px;
+          }
+
   @media screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
     screen and (min-device-pixel-ratio: 2) {
-    /*.hero {
-        background-image: linear-gradient(-90deg,
-                rgba(28, 29, 32, 1),
-                rgb(105, 41, 45, 1),
-                rgba(237, 59, 68, 1)),
-                url(#);
-        }*/
+    .hero {
+        background-image: url(../img/hero/tablet-hero@2x.png);
+        }
   }
 
   .hero-title {
-    max-width: 632px;
+    max-width: 768px;
     font-size: 90px;
   }
 
@@ -157,22 +196,22 @@ a:hover {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
+  .hero {
+      background-image: url(../img/hero/desktop-hero.png);
+      max-width: 1440px;
+    }
+
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
     screen and (min-device-pixel-ratio: 2) {
-    /*.hero {
-    background-image: linear-gradient(-90deg,
-            rgba(28, 29, 32, 1),
-            rgb(105, 41, 45, 1),
-            rgba(237, 59, 68, 1)),
-            url(#);
+    .hero {
+    background-image: url(../img/hero/desktop-hero@2x.png);
         }
-    } */
-  }
+    } 
 
   .hero-title {
-    max-width: 1084px;
+    max-width: 1440px;
     font-size: 90px;
     padding-bottom: 243px;
     padding-top: 300px;
