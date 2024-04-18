@@ -3,6 +3,7 @@ const menuContainer = document.querySelector('.menu-wrapper');
 const pageNavButton = document.querySelector('.page-nav-button');
 const menuCloseBtn = document.querySelector('.menu-button-close');
 const menuLinks = document.querySelectorAll('.menu-nav-list-item a');
+const ButtonSeeProject = document.querySelector('.button-menu-page');
 
 function closeMobileMenu() {
   mobileMenuBtn.setAttribute('aria-expanded', 'false');
@@ -60,3 +61,17 @@ menuLinks.forEach(link => {
   });
 });
 
+ButtonSeeProject.addEventListener('click', event => {
+  event.preventDefault();
+  const ButtonSeeProjectLink = document.querySelector('#button-cont');
+  const targetId = ButtonSeeProjectLink.getAttribute('href');
+  const targetElement = document.querySelector(targetId);
+  if (targetElement) {
+    window.scrollTo({
+      top:
+        targetElement.offsetTop -
+        document.querySelector('.header-wrapper').offsetHeight,
+      behavior: 'smooth',
+    });
+  }
+});

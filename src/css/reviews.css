@@ -203,3 +203,7 @@
     height: 32px;
   }
 }
+
+.card {
+  background-color: transparent;
+}
