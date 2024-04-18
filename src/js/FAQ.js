@@ -5,7 +5,6 @@ import Accordion from 'accordion-js';
 
 document.addEventListener('DOMContentLoaded', function () {
   const accordionItems = document.querySelectorAll('.faq');
-
   accordionItems.forEach(item => {
     const header = item.querySelector('.faq-question-container');
     const content = item.querySelector('.faq-answer-container');

@@ -6,6 +6,7 @@
     padding-bottom: 169px;
     }
 }
+
 .footer-wrap{
     display: flex;
     flex-direction: column;
@@ -175,6 +176,9 @@ border-bottom: 1px solid #FAFAFA33;
 resize: none;
 outline: transparent;
 max-width: 343px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 &::placeholder{
     color:#FAFAFA99;

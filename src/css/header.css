@@ -263,6 +263,10 @@ button {
     padding: 32px;
   }
 
+  .menu-button-close {
+    padding-bottom: 20px;
+  }
+
   .button-menu-page {
     display: flex;
     cursor: pointer;
