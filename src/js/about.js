@@ -74,7 +74,7 @@ const about_swiper = new Swiper('.swiper-about', {
   slidesPerView: 2,
   loop: true,
   navigation: {
-    nextEl: '.swiper-button-next',
+    nextEl: '.skills-btn',
   },
   breakpoints: {
     768: {
