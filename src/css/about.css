@@ -216,9 +216,9 @@
   border: 1px solid rgba(250, 250, 250, 0.2);
 }
 
-.swiper-about .swiper-slide-active {
+/* .swiper-about .swiper-slide-active {
   background-color: #ed3b44;
-}
+} */
 
 .is-hidden {
   display: none;
@@ -281,11 +281,11 @@
   .education-wrapper::after {
     width: 704px;
   }
-  .swiper-wrapper {
+  /* .swiper-wrapper {
     max-width: 600px;
-  }
+  } */
 
-  .swiper-slide.swiper-slide-next {
+  /* .swiper-slide.swiper-slide-next {
     font-size: 20px;
     width: 200px;
     height: 200px;
@@ -299,15 +299,15 @@
     height: 200px;
     padding-top: 88px;
     padding-bottom: 88px;
-  }
+  } */
 
-  .swiper-slide {
+  /* .swiper-slide {
     width: 200px;
     height: 200px;
     font-size: 20px;
     padding-top: 88px;
     padding-bottom: 88px;
-  }
+  } */
   .skills-btn {
     top: 110px;
   }
