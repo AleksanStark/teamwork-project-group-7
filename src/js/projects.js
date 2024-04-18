@@ -23,8 +23,8 @@ const projectsSwiper = new Swiper('.projects-swiper', {
 });
 ToSeeButton.addEventListener('click', event => {
   event.preventDefault();
-  const ButtonSeeProjectLink = document.querySelector('.projects-list-link');
-  const targetId = ButtonSeeProjectLink.getAttribute('href');
+  const ButtonToSeeProject = document.querySelector('.projects-list-link');
+  const targetId = ButtonToSeeProject.getAttribute('href');
   const targetElement = document.querySelector(targetId);
   if (targetElement) {
     window.scrollTo({
