@@ -1,139 +1,184 @@
-<section class="about">
-  <div class="wrapper-about container">
-    <h2 class="visually-hidden">
-    </h2>
-    <div class="about-title-container">
-     <div class="about-title-text-container">
-      <p class="about-title-text">I work with people all over the world to create impressive and <span class="about-accent-red">functional</span> <span class="about-accent-gray">websites</span> that reflect each client's unique personality.</p>
+<section class="about" data-aos="fade-right">
+  <div class="container">
+    <h1 class="visually-hidden">About me</h1>
+    <div class="am-headline">
+      <div class="am-summary">
+        <p>
+          I work with people all over the world to create impressive and
+          <span id="functional">functional</span>
+          <span id="websites">websites</span> that reflect each client's unique
+          personality.
+        </p>
+      </div>
+      <div>
+        <picture>
+          <source
+            srcset="
+              ./img/about-me/photo_desc1x.jpg 1x,
+              ./img/about-me/photo_desc2x.jpg 2x
+            "
+            media="(min-width: 1158px)"
+          />
+          <source
+            srcset="
+              ./img/about-me/photo_tab1x.jpg 1x,
+              ./img/about-me/photo_tab2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./img/about-me/photo_mob1x.jpg 1x,
+              ./img/about-me/photo_mob1x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            class="am-photo"
+            src="./img/about-me/photo_mob1x.jpg"
+            alt="my-photo"
+            loading="lazy"
+          />
+        </picture>
+      </div>
     </div>
-    
-    <picture class="about-picture">
-      <source srcset="../img/about/about-picture-desktop.jpg 1x, ../img/about/about-picture-desktop@2x.jpg 2x" media="(min-width: 1280px)" width="680" height="700">
-      <source srcset="../img/about/about-picture-tablet.jpg 1x,
-      ../img/about/about-picture-tablet@2x.jpg 2x" media="(min-width: 768px)" width="704" height="700">
-      <source srcset="../img/about/about-picture-mobile.jpg 1x,
-      ../img/about/about-picture-mobile@2x.jpg 2x" media="(max-width: 767px)" width="343" height="500">
-      <img class="about-img" src="../img/about/about-picture-mobile.jpg" alt="blond man with laptop" width="343" height="500">
-    </picture>
-    </div>
-    <ul class="about-list accordion-container">
-      <li class="about-list-item about-wrapper">
-        <div class="title-btn-container">
-          <h4 class="about-subtitle">About me</h4>
-          <button class="about-list-btn ac-trigger-first" type="button">
+    <div class="am-main accordion-container">
+      <div class="ac">
+        <div class="ac-header am-accordion-wrap">
+          <button type="button" class="ac-trigger">
+            About me
             <svg
-              class="about-btn-icon icon about-me-icon"
-              width="18"
-              height="18"
-              viewBox="0 0 18 18"
+              class="ac-icon icon-first"
+              width="20"
+              height="20"
+              aria-label="icon-chekmark"
             >
-              <use href="./img/icons.svg#accordion-down-icon"></use>
+              <use href="./sprites/symbol-defs.svg#icon-arrow-down"></use>
             </svg>
           </button>
         </div>
-        <div class="about-me-container ac-content-first">
-          <p class="about-me-text">
-            I am Lloyd Jefferson, a talented programmer with extensive expertise
-            in software development. I have an understanding of different
-            programming languages ​​and technologies, always ready to improve my
-            skills. I always follow the latest trends and look for
-            unconventional, creative solutions to problems. I have a high level
-            of analytical skills and am able to effectively solve even the most
-            difficult tasks encountered on the way. <br />
-            <br />
-
-            Able to work both independently and in a team. I can effectively
-            cooperate with colleagues, exchanging ideas and finding optimal
-            solutions. Professional maturity allows you to calmly cope with
-            challenges and stressful situations, while maintaining a high
-            quality of work.I am always looking for opportunities for
-            self-improvement.
-            <br />
-            I actively study new technologies and practices to stay abreast of
-            the latest innovations. I have a strong understanding of various
-            programming languages, frameworks and architectural concepts that
-            allow me to create efficient and scalable software.
-          </p>
-        </div>
-      </li>
-      <li class="about-list-item role-wrapper">
-        <div class="title-btn-container">
-          <h4 class="about-subtitle">Role</h4>
-          <button class="about-list-btn ac-trigger-second" type="button">
-            <svg
-              class="about-btn-icon icon role-icon"
-              width="18"
-              height="18"
-              viewBox="0 0 18 18"
-            >
-              <use href="./img/icons.svg#accordion-down-icon"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="roles-container ac-content-second is-hidden">
-          <ul class="roles-list">
-            <li class="roles-list-item">Frontend development</li>
-            <li class="roles-list-item">HeadlessCMS,Wordpress</li>
-            <li class="roles-list-item">Blender(enjoy)</li>
+        <div class="ac-panel">
+          <ul class="aboutme-list aboutme-text">
+            <li>
+              I am Lloyd Jefferson, a talented programmer with extensive
+              expertise in software development. I have an understanding of
+              different programming languages ​​and technologies, always ready
+              to improve my skills. I always follow the latest trends and look
+              for unconventional, creative solutions to problems. I have a high
+              level of analytical skills and am able to effectively solve even
+              the most difficult tasks encountered on the way.
+            </li>
+            <li>
+              Able to work both independently and in a team. I can effectively
+              cooperate with colleagues, exchanging ideas and finding optimal
+              solutions. Professional maturity allows you to calmly cope with
+              challenges and stressful situations, while maintaining a high
+              quality of work.I am always looking for opportunities for
+              self-improvement. I actively study new technologies and practices
+              to stay abreast of the latest innovations. I have a strong
+              understanding of various programming languages, frameworks and
+              architectural concepts that allow me to create efficient and
+              scalable software.
+            </li>
           </ul>
         </div>
-      </li>
-      <li class="about-list-item education-wrapper">
-        <div class="title-btn-container">
-          <h4 class="about-subtitle">Education</h4>
-          <button class="about-list-btn ac-trigger-third" type="button">
+      </div>
+      <div class="ac">
+        <div class="ac-header am-accordion-wrap">
+          <button type="button" class="ac-trigger">
+            Role
             <svg
-              class="about-btn-icon icon education-icon"
-              width="18"
-              height="18"
-              viewBox="0 0 18 18"
+              class="ac-icon"
+              width="20"
+              height="20"
+              aria-label="icon-chekmark"
             >
-              <use href="./img/icons.svg#accordion-down-icon"></use>
+              <use href="./sprites/symbol-defs.svg#icon-arrow-up"></use>
             </svg>
           </button>
         </div>
-        <div class="education-container ac-content-third is-hidden">
-          <ul class="education-list">
-            <li class="education-list-item">
+        <div class="ac-panel">
+          <ul class="aboutme-list aboutme-text">
+            <li>Frontend development</li>
+            <li>HeadlessCMS, Wordpress</li>
+            <li>Blender(enjoy)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="ac">
+        <div class="ac-header am-accordion-wrap">
+          <button type="button" class="ac-trigger" aria-expanded="true">
+            Education
+            <svg
+              class="ac-icon"
+              width="20"
+              height="20"
+              aria-label="icon-chekmark"
+            >
+              <use href="./sprites/symbol-defs.svg#icon-arrow-up"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-panel">
+          <ul class="aboutme-list aboutme-text">
+            <li>
               2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
               York
             </li>
-            <li class="education-list-item">
+            <li>
               2019 - 2020 / Advanced Web Development Certificate, GoIT IT
               School, New York
             </li>
-            <li class="education-list-item">
-              2020 - 2022 / Advanced Blender Animation Techniques, Udemy
-            </li>
+            <li>2020 - 2022 / Advanced Blender Animation Techniques, Udemy</li>
           </ul>
         </div>
-      </li>
-      <li class="about-list-item">
-        <div class="skills-btn-container">
+      </div>
+    </div>
 
-          <div class="swiper swiper-about">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide about-swiper-slide">HTML/CSS</div>
-                  <div class="swiper-slide about-swiper-slide">JavaScript</div>
-                  <div class="swiper-slide about-swiper-slide">React</div>
-                  <div class="swiper-slide about-swiper-slide">Node.js</div>
-                  <div class="swiper-slide about-swiper-slide">React Native</div>
-                  <div class="swiper-slide about-swiper-slide">Soft skills</div>
-              </div>
-            </div>
-          <div class="skills-btn">
-                  <svg
-                    class="skills-btn-icon"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                  >
-                    <use href="./img/icons.svg#swiper-icon"></use>
-                  </svg>
-              </div>
-          </div>
-        </div>
-      </li>
-    </ul>
+    <div class="swiper-skills-list__body">
+      <div class="swiper-skills-list">
+        <!-- Additional required wrapper -->
+        <ul class="swiper-wrapper swiper-skills-list__wrapper">
+          <!-- Slides -->
+          <li class="swiper-slide swiper-skills-slide">
+            <button>HTML/CSS</button>
+          </li>
+          <li class="swiper-slide swiper-skills-slide">
+            <button>JavaScript</button>
+          </li>
+          <li class="swiper-slide swiper-skills-slide">
+            <button>React</button>
+          </li>
+          <li class="swiper-slide swiper-skills-slide">
+            <button>Node.js</button>
+          </li>
+          <li class="swiper-slide swiper-skills-slide">
+            <button>React Native</button>
+          </li>
+          <li class="swiper-slide swiper-skills-slide">
+            <button>Soft skills</button>
+          </li>
+          <li class="swiper-slide swiper-skills-slide">
+            <button>PHP</button>
+          </li>
+          <li class="swiper-slide swiper-skills-slide">
+            <button>Laravel</button>
+          </li>
+          <li class="swiper-slide swiper-skills-slide">
+            <button>Symfony</button>
+          </li>
+          <li class="swiper-slide swiper-skills-slide">
+            <button>Vue</button>
+          </li>
+        </ul>
+
+        <!-- If we need navigation buttons -->
+      </div>
+      <div class="swiper-skill-list-next">
+        <svg class="right-btn-icon btn-icon" aria-label="swipe right icon">
+          <use href="./sprites/symbol-defs.svg#icon-arrow-right"></use>
+        </svg>
+      </div>
+    </div>
   </div>
 </section>
