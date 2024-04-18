@@ -63,6 +63,7 @@ button {
 }
 
 .header-wrapper {
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -122,6 +123,8 @@ button {
   position: fixed;
   top: 0;
   left: 0;
+  height: 100vh;
+  overflow-y: auto;
   width: 100%;
   z-index: 1000;
   display: flex;
