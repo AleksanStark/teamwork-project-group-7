@@ -1,9 +1,10 @@
 import { fetchReviews } from './api.js';
-import { slider } from './slider.js';
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 import Izitoast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-
 const mySwiper = document.querySelector('.mySwiper');
+
 const reviewGallery = async () => {
   try {
     const reviews = await fetchReviews();
@@ -13,10 +14,10 @@ const reviewGallery = async () => {
       review,
     }));
 
-    const container = document.querySelector('.swiper-wrapper');
+    const container = document.querySelector('.markup');
 
     const markup = reviewObject
-      .map(({ _id, author, avatar_url, review }) => {
+      .map(({ author, avatar_url, review }) => {
         return `<div class="swiper-slide card">
     <img
     loading="lazy"
@@ -43,5 +44,26 @@ const reviewGallery = async () => {
 
 window.addEventListener('DOMContentLoaded', () => {
   reviewGallery();
-  slider('.swiper');
+  const reviewSwiper = new Swiper('.mySwiper', {
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1440: {
+        slidesPerView: 4,
+      },
+    },
+    spaceBetween: 16,
+    cssMode: true,
+    navigation: {
+      nextEl: '.swiper-button-right',
+      prevEl: '.swiper-button-left',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    mousewheel: true,
+    keyboard: true,
+  });
 });

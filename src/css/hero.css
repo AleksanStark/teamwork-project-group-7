@@ -1,0 +1,246 @@
+
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: url(../img/hero/mobile-hero.png);
+
+  background-image: /* linear-gradient(-90deg,
+            rgba(28, 29, 32, 1),
+            rgb(105, 41, 45, 1),
+            rgba(237, 59, 68, 1)),*/ url('../img/hero/bg-red-x1.png');
+
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
+  .hero {
+
+    background-image: url(../img/hero/mobile-hero@2x.png);
+
+    background-image: /*linear-gradient(-90deg,
+            rgba(28, 29, 32, 1),
+            rgb(105, 41, 45, 1),
+            rgba(237, 59, 68, 1)),*/ url('../img/hero/bg-red-x2.png');
+
+  }
+}
+
+.hero-title {
+  margin: 0 auto;
+  max-width: 343px;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fafafa;
+  padding-bottom: 212px;
+  padding-top: 281px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-address-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  padding-bottom: 32px;
+}
+
+.hero-address-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.hero-address-mail-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+
+.link-mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 178px;
+  height: 37px;
+  border-radius: 60px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+
+.link-mail:hover,
+.link-mail:active {
+  background-color: #e0373f;
+  box-shadow: 0 0 15px 5px #f4e4e5;
+  cursor: pointer;
+}
+
+.link:hover,
+.link:active {
+  background-color: #e0373f;
+  box-shadow: 0 0 15px 5px #f4e4e5;
+  cursor: pointer;
+}
+
+@keyframes socialMediaMarkup {
+
+  0%,
+  20% {
+    box-shadow: none;
+  }
+
+  25%,
+  45% {
+    box-shadow: 0 0 15px 5px #f4e4e5;
+  }
+
+  50%,
+  70% {
+    box-shadow: none;
+  }
+}
+
+.animation {
+  animation: socialMediaMarkup 9.5s infinite;
+  /* Adjust the total animation duration and repeat count */
+}
+
+.one {
+  animation-delay: 2.5s;
+}
+
+.two {
+  animation-delay: 4.5s;
+}
+
+.three {
+  animation-delay: 6.5s;
+}
+
+.four {
+  animation-delay: 8.5s;
+}
+
+.five {
+  animation-delay: 10.5s;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+          background-image: url(../img/hero/tablet-hero.png);
+          max-width: 768px;
+          }
+
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .hero {
+        background-image: url(../img/hero/tablet-hero@2x.png);
+        }
+  }
+
+  .hero-title {
+    max-width: 768px;
+    font-size: 90px;
+  }
+
+  .hero-address-list {
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 32px;
+  }
+
+  .hero-address-link {
+    font-size: 16px;
+  }
+
+  .link {
+    width: 55px;
+    height: 55px;
+  }
+
+  .hero-address-mail-link {
+    font-size: 16px;
+  }
+
+  .link-mail {
+    width: 223px;
+    height: 55px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+      background-image: url(../img/hero/desktop-hero.png);
+      max-width: 1440px;
+    }
+
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .hero {
+    background-image: url(../img/hero/desktop-hero@2x.png);
+        }
+    } 
+
+  .hero-title {
+    max-width: 1440px;
+    font-size: 90px;
+    padding-bottom: 243px;
+    padding-top: 300px;
+  }
+
+  .hero-address-list {
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 32px;
+  }
+
+  .hero-address-link {
+    font-size: 16px;
+  }
+
+  .link {
+    width: 55px;
+    height: 55px;
+  }
+
+  .hero-address-mail-link {
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  .link-mail {
+    width: 223px;
+    height: 55px;
+  }
+}
