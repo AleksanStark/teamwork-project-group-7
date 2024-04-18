@@ -14,17 +14,16 @@
 }
 
 .card {
-  border-radius: 20px;
   padding: 32px 24px;
-
+  border: 1px solid #48494c;
+  border-radius: 20px;
   max-width: 343px !important;
   height: 302px !important;
   box-sizing: border-box;
   overflow: auto;
 }
 .mySwiper {
-  position: relative;
-  padding-bottom: 64px;
+  margin-bottom: 32px;
 }
 
 .review-title {
@@ -53,19 +52,21 @@
 .card-review {
   color: #a1a2a3;
 }
-
+.review-buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
 .swiper-button-left {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
   border: 1px solid #fafafa;
   border-radius: 60px;
   padding: 14px;
   width: 68px;
   height: 68px;
-  left: 42%;
-  transform: translateX(-50%);
   stroke: #fafafa;
 }
 
@@ -75,19 +76,14 @@
 }
 
 .swiper-button-right {
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
   border: 1px solid #fafafa;
   border-radius: 60px;
   padding: 14px;
   width: 68px;
   height: 68px;
-  left: 49%;
-  /* transform: rotate(-180deg); */
-  transform: translateX(50%);
   stroke: #fafafa;
 }
 
@@ -116,18 +112,18 @@
     border-radius: 20px;
     padding: 32px 24px;
   }
+  .review-buttons-container {
+    gap: 20px;
+  }
   .swiper-button-left {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     border: 1px solid #fafafa;
     border-radius: 60px;
     padding: 14px;
     width: 68px;
     height: 68px;
-    left: 44%;
-    transform: translateX(-50%);
     stroke: #fafafa;
   }
 
@@ -137,19 +133,14 @@
   }
 
   .swiper-button-right {
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     border: 1px solid #fafafa;
     border-radius: 60px;
     padding: 14px;
     width: 68px;
     height: 68px;
-    left: 47%;
-    /* transform: rotate(-180deg); */
-    transform: translateX(50%);
     stroke: #fafafa;
   }
 
@@ -177,21 +168,16 @@
     padding: 32px 24px;
     max-width: 332px !important;
   }
-  /* .swiper-slide {
-    max-width: 332px;
-  } */
+
   .swiper-button-left {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     border: 1px solid #fafafa;
     border-radius: 60px;
     padding: 14px;
     width: 68px;
     height: 68px;
-    left: 47%;
-    transform: translateX(-50%);
     stroke: #fafafa;
   }
 
@@ -201,19 +187,14 @@
   }
 
   .swiper-button-right {
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     border: 1px solid #fafafa;
     border-radius: 60px;
     padding: 14px;
     width: 68px;
     height: 68px;
-    left: 49%;
-    /* transform: rotate(-180deg); */
-    transform: translateX(50%);
     stroke: #fafafa;
   }
 
