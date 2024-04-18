@@ -16,6 +16,11 @@
 .card {
   border-radius: 20px;
   padding: 32px 24px;
+
+  max-width: 343px !important;
+  height: 302px !important;
+  box-sizing: border-box;
+  overflow: auto;
 }
 .mySwiper {
   position: relative;
@@ -104,12 +109,12 @@
   .review-wrapper {
     min-width: 768px;
     padding: 0 32px;
+    padding-bottom: 82px;
   }
   .card {
     border: 1px solid #48494c;
     border-radius: 20px;
     padding: 32px 24px;
-    width: 344px;
   }
   .swiper-button-left {
     display: flex;
@@ -164,12 +169,13 @@
   .review-wrapper {
     min-width: 1440px;
     padding: 0 32px;
+    padding-bottom: 100px;
   }
   .card {
     border: 1px solid #48494c;
     border-radius: 20px;
     padding: 32px 24px;
-    width: 332px;
+    max-width: 332px !important;
   }
   /* .swiper-slide {
     max-width: 332px;
