@@ -8,6 +8,7 @@ const form = document.querySelector('.form-work-together');
 const textBoxModal = document.querySelector('.modal-text-box');
 const modal = document.querySelector('[data-modal]');
 const btnClose = document.querySelector('[data-modal-close]');
+const bodyModal = document.querySelector('.modal');
 
 //==================================================================
 let data = {};
@@ -48,12 +49,21 @@ function handlerSubmit(evt) {
     });
     return;
   }
-  CreatePost(data).then(obj => {
-    modal.classList.remove('is-hidden');
-    const markup = modalTemplate(obj);
-    textBoxModal.innerHTML = markup;
-  });
-
+  CreatePost(data)
+    .then(obj => {
+      modal.classList.remove('is-hidden');
+      const markup = modalTemplate(obj);
+      textBoxModal.innerHTML = markup;
+    })
+    .catch(obj => {
+      iziToast.show({
+        position: 'topRight',
+        color: 'red',
+        messageColor: 'black',
+        message: 'Not found',
+      });
+    });
+  data = {};
   form.reset();
 }
 //==================================================================
@@ -70,7 +80,7 @@ function modalTemplate({ message, title }) {
 }
 //==================================================================
 btnClose.addEventListener('click', closeModal);
-document.addEventListener('click', closeModal);
+modal.addEventListener('click', closeModal);
 document.addEventListener('keydown', closeByEsc);
 
 function closeByEsc(evt) {
@@ -79,7 +89,8 @@ function closeByEsc(evt) {
     textBoxModal.innerHTML = '';
   }
 }
-function closeModal() {
+function closeModal(evt) {
+  if (evt.target === bodyModal) return;
   modal.classList.add('is-hidden');
   textBoxModal.innerHTML = '';
 }
