@@ -73,6 +73,7 @@ const about_swiper = new Swiper('.my-swiper', {
   direction: 'horizontal',
   slidesPerView: 2,
   loop: true,
+  slideActiveClass: 'swiper-slide-active-about',
   navigation: {
     nextEl: '.swiper-button',
   },
