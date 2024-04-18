@@ -3,6 +3,7 @@ const menuContainer = document.querySelector('.menu-wrapper');
 const pageNavButton = document.querySelector('.page-nav-button');
 const menuCloseBtn = document.querySelector('.menu-button-close');
 const menuLinks = document.querySelectorAll('.menu-nav-list-item a');
+const otherProject = document.querySelector('#button-cont');
 
 function closeMobileMenu() {
   mobileMenuBtn.setAttribute('aria-expanded', 'false');
@@ -60,3 +61,18 @@ menuLinks.forEach(link => {
   });
 });
 
+otherProject.addEventListener('click', event => {
+  event.preventDefault();
+  const projectHref = event.currentTarget.getAttribute('href');
+
+  const targetProject = document.querySelector(projectHref);
+
+  if (targetProject) {
+    window.scrollTo({
+      top:
+        targetProject.offsetTop -
+        document.querySelector('.header-wrapper').offsetHeight,
+      behavior: 'smooth',
+    });
+  }
+});
