@@ -9,10 +9,10 @@
     <path d="M18.6665 8L26.6665 16L18.6665 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
   </symbol>
 
-  <symbol id="icon-close" viewBox="0 0 32 32">
-  <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M24 8l-16 16"></path>
-  <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M8 8l16 16"></path>
-  </symbol>
+  <svg id="icon-close"
+  width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="m16.5 5.5-11 11M5.5 5.5l11 11" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
 
   <symbol id="icon-open" viewBox="0 0 67 32">
   <path stroke-linejoin="round" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="5.8182" d="M1.455 2.647h61.091M1.455 26.415h61.091"></path>

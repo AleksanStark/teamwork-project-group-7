@@ -49,11 +49,20 @@ function handlerSubmit(evt) {
     });
     return;
   }
-  CreatePost(data).then(obj => {
-    modal.classList.remove('is-hidden');
-    const markup = modalTemplate(obj);
-    textBoxModal.innerHTML = markup;
-  });
+  CreatePost(data)
+    .then(obj => {
+      modal.classList.remove('is-hidden');
+      const markup = modalTemplate(obj);
+      textBoxModal.innerHTML = markup;
+    })
+    .catch(obj => {
+      iziToast.show({
+        position: 'topRight',
+        color: 'red',
+        messageColor: 'black',
+        message: 'Not found',
+      });
+    });
   data = {};
   form.reset();
 }
