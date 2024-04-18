@@ -68,13 +68,13 @@ function onClickThird() {
 
 // ------------------ swiper ---------------
 
-const about_swiper = new Swiper('.swiper-about', {
+const about_swiper = new Swiper('.my-swiper', {
   modules: [Navigation],
   direction: 'horizontal',
   slidesPerView: 2,
   loop: true,
   navigation: {
-    nextEl: '.skills-btn',
+    nextEl: '.swiper-button',
   },
   breakpoints: {
     768: {
