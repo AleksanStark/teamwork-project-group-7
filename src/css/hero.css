@@ -6,27 +6,25 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-clip: padding-box
+  background-clip: padding-box;
 }
 
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
-screen and (min-resolution: 2dppx) and (max-width: 767px),
-screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
   .hero-section {
-    background-image: url(../img/hero/mobile-hero@2x.png)
+    background-image: url(../img/hero/mobile-hero@2x.png);
   }
 }
 
 .hero-container {
   width: 343px;
   margin: 0 auto;
-  position: relative;
-  top: 281px
 }
 
 @media screen and (max-width: 374px) {
   .hero-container {
-    padding: 0 16px
+    padding: 0 16px;
   }
 }
 
@@ -34,13 +32,14 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
   font-weight: 500;
   font-size: 50px;
   line-height: 1;
-  letter-spacing: -.03em;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #fafafa;
   text-align: left;
   max-width: 343px;
   max-height: 250px;
-  margin-bottom: 212px
+  margin-bottom: 222px;
+  margin-top: 137px;
 }
 
 .social-media-list {
@@ -48,51 +47,50 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
   justify-content: center;
   gap: 4px;
   align-items: center;
-  margin-bottom: 32px
+  margin-bottom: 32px;
 }
 
 .social-media-item {
   width: 37px;
   height: 37px;
-  border: 1px solid rgba(250, 250, 250, .2);
+  border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
   padding: 10px;
   font-weight: 500;
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
 
 .social-media-link {
   font-weight: 500;
   font-size: 14px;
-  letter-spacing: -.02em;
-  color: #fafafa
+  letter-spacing: -0.02em;
+  color: #fafafa;
 }
 
 .email-link {
-  border: 1px solid rgba(250, 250, 250, .2);
+  border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
   padding: 10px 12px;
   width: 178px;
   height: 37px;
   font-weight: 500;
   font-size: 14px;
-  letter-spacing: -.02em;
+  letter-spacing: -0.02em;
   color: #fafafa;
   width: 100%;
-  height: 100%
+  height: 100%;
 }
 
 .social-media-item:active,
 .email-link:active {
   background-color: #e0373f;
-    box-shadow: 0 0 15px 5px #f4e4e5;
-    cursor: pointer;
+  box-shadow: 0 0 15px 5px #f4e4e5;
+  cursor: pointer;
 }
 
 @keyframes socialMediaMarkup {
-
   0%,
   20% {
     box-shadow: none;
@@ -137,96 +135,96 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 @media screen and (min-width: 768px) {
   .hero-section {
     height: 1024px;
-    background-image: url(../img/hero/tablet-hero.png)
+    background-image: url(../img/hero/tablet-hero.png);
   }
 
   @media screen and (min-resolution: 192dpi) and (max-width: 1339px),
-  screen and (min-resolution: 2dppx) and (max-width: 1339px),
-  screen and (min-device-pixel-ratio: 2) and (max-width: 1339px) {
+    screen and (min-resolution: 2dppx) and (max-width: 1339px),
+    screen and (min-device-pixel-ratio: 2) and (max-width: 1339px) {
     .hero-section {
-      background-image: url(../img/hero/tablet-hero@2x.png)
+      background-image: url(../img/hero/tablet-hero@2x.png);
     }
   }
 
   .hero-container {
     width: 704px;
-    top: 300px
+    top: 300px;
   }
 
   .hero-title {
     font-size: 90px;
     max-width: 632px;
     max-height: 450px;
-    margin-bottom: 187px
+    margin-bottom: 187px;
   }
 
   .social-media-list {
     width: 473px;
     gap: 8px;
-    margin-left: auto
+    margin-left: auto;
   }
 
   .social-media-item {
     padding: 18px 20px;
     width: 55px;
-    height: 55px
+    height: 55px;
   }
 
   .social-media-link {
-    font-size: 16px
+    font-size: 16px;
   }
 
   .email-link {
     font-size: 16px;
     padding: 18px 24px;
     width: 223px;
-    height: 55px
+    height: 55px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .hero-section {
     height: 900px;
-    background-image: url(../img/hero/bg-red-x1.png)
+    background-image: url(../img/hero/bg-red-x1.png);
   }
 
   .hero-container {
-    width: 1376px
+    width: 1376px;
   }
 
   .hero-title {
     max-width: 1084px;
     max-height: 270px;
-    margin: auto auto 243px
+    margin: auto auto 243px;
   }
 
   .social-media-item {
-    transition: background-color .25s cubic-bezier(.4, 0, .2, 1)
+    transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .social-media-item:hover,
   .social-media-item:focus {
-    background-color: #e0373f
+    background-color: #e0373f;
   }
 
   .social-media-item {
-    cursor: pointer
+    cursor: pointer;
   }
 
   .email-link {
-    transition: background-color .25s cubic-bezier(.4, 0, .2, 1)
+    transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .email-link:hover,
   .email-link:focus {
-    background-color: #e0373f
+    background-color: #e0373f;
   }
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
-screen and (min-resolution: 2dppx) and (min-width: 1440px),
-screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+  screen and (min-resolution: 2dppx) and (min-width: 1440px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
   .hero-section {
-    background-image: url(../img/hero/bg-red-x2.png)
+    background-image: url(../img/hero/bg-red-x2.png);
   }
 }
