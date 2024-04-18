@@ -1,5 +1,6 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
+const ToSeeButton = document.querySelector('.projects-list-button');
 
 const projectsSwiper = new Swiper('.projects-swiper', {
   breakpoints: {
@@ -19,4 +20,18 @@ const projectsSwiper = new Swiper('.projects-swiper', {
 
   mousewheel: true,
   keyboard: true,
+});
+ToSeeButton.addEventListener('click', event => {
+  event.preventDefault();
+  const ButtonSeeProjectLink = document.querySelector('.projects-list-link');
+  const targetId = ButtonSeeProjectLink.getAttribute('href');
+  const targetElement = document.querySelector(targetId);
+  if (targetElement) {
+    window.scrollTo({
+      top:
+        targetElement.offsetTop -
+        document.querySelector('.projects-list-box-info').offsetHeight,
+      behavior: 'smooth',
+    });
+  }
 });
