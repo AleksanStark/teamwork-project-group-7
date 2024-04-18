@@ -187,7 +187,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 @media screen and (min-width: 1440px) {
   .hero-section {
     height: 900px;
-    background-image: url(../img/hero/desktop-hero.png)
+    background-image: url(../img/hero/bg-red-x1.png)
   }
 
   .hero-container {
@@ -227,6 +227,6 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 screen and (min-resolution: 2dppx) and (min-width: 1440px),
 screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
   .hero-section {
-    background-image: url(../img/hero/desktop-hero@2x.png)
+    background-image: url(../img/hero/bg-red-x2.png)
   }
 }
