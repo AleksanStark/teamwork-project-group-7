@@ -38,6 +38,40 @@ button {
   background-color: #1c1d20;
 }
 
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ed3b44;
+  color: #fff;
+  border: none;
+  border-radius: 60px;
+  padding: 10px;
+  cursor: pointer;
+  stroke: #e0373f;
+  box-shadow: 0 0 15px 1px #e0373f
+}
+
+#scrollToTopBtn:hover {
+  background-color: #e0373f
+}
+
+.icon-to-top {
+  width: 12px;
+  height: 12px;
+  fill: none;
+  stroke: #fafafa;
+  stroke-width: 2px;
+  border: none;
+  transform: rotate(180deg)
+}
+
 @media screen and (max-width: 374.98px) {
   .container {
     max-width: 374.98px;

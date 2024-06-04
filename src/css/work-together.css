@@ -16,7 +16,7 @@
         
     }
 }
-.succes{
+.success{
     position: absolute;
     top: 30px;
     color: #3CBC81;
@@ -146,7 +146,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 &:not(:focus):not(:placeholder-shown):invalid{
     border-color:#E74A3B;
 }
-&:not(:focus):not(:placeholder-shown):valid ~ .succes{
+&:not(:focus):not(:placeholder-shown):valid ~ .success{
     display: block;
     }
 

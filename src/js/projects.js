@@ -21,17 +21,4 @@ const projectsSwiper = new Swiper('.projects-swiper', {
   mousewheel: true,
   keyboard: true,
 });
-ToSeeButton.addEventListener('click', event => {
-  event.preventDefault();
-  const ButtonToSeeProject = document.querySelector('.projects-list-link');
-  const targetId = ButtonToSeeProject.getAttribute('href');
-  const targetElement = document.querySelector(targetId);
-  if (targetElement) {
-    window.scrollTo({
-      top:
-        targetElement.offsetTop -
-        document.querySelector('.projects-list-box-info').offsetHeight,
-      behavior: 'smooth',
-    });
-  }
-});
+
